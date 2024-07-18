@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <title>CRUD PROGECT</title>
+</head>
+<body>
+
+    <div class="container my-5 bg-danger-subtle">
+        <h1 class="h2 text-black text-center p-3 m-3 fw-bolder ">Bookmarker</h1>
+        <hr>
+        <p class=" text-center fw-bolder text-secondary mb-4">bookmark your fovoritr sites</p>
+        <br>
+            <div class="mb-3">
+              <label for="siteName" class="form-label">Site Name</label>
+              <input type="text" class="form-control mb-lg-5" id="siteName" placeholder="bookmark Name">
+            </div>
+            
+
+            <div class="mb-3">
+                <label for="url" class="form-label">Site URL</label>
+                <input type="text" class="form-control mb-lg-5" id="url" placeholder="Website Name">
+            </div>
+           
+
+            <button type="submit" class="btn btn-outline-dark  d-grid gap-2 col-3 mx-auto" onclick="addProduct()" disabled id="btnAdd">Submit</button>
+            <hr>
+            <table class=" fw-bolder w-100 bg-primary-subtle">
+                <thead>
+                    <tr>
+                        <td class="w-25">Index</td>
+                        <td  class="w-25">Website Name</td>
+                        <td  class="w-25">Visit</td>
+                        <td  class="w-25">Delete</td>
+                    </tr>
+                </thead>
+
+
+
+                <tbody id="tableBody">
+            
+                </tbody>
+            </table>
+     </div>
+    
+
+
+
+
+
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
